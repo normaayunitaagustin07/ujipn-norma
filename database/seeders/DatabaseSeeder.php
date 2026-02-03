@@ -26,9 +26,17 @@ class DatabaseSeeder extends Seeder
                 'role' => 'admin'
             ],
             [
-                'nama' => 'Annisa Nur Fitri',
+                'nama' => 'Norma Ayunita Agustin',
                 'username' => 'user-12345678',
-                'email' => 'annisaica@gmail.com',
+                'email' => 'norma@gmail.com',
+                'jabatan' => '',
+                'password' => bcrypt('123456'),
+                'role' => 'siswa'
+            ],
+            [
+                'nama' => 'Cecep Spidermen',
+                'username' => 'user-12345679',
+                'email' => 'spidermen@gmail.com',
                 'jabatan' => '',
                 'password' => bcrypt('123456'),
                 'role' => 'siswa'
@@ -43,6 +51,12 @@ class DatabaseSeeder extends Seeder
             [
                 'user_id' => 2,
                 'nis' => '12345678',
+                'kelas' => '12 RPL',
+                'jurusan' => 'PPLG',
+            ],
+            [
+                'user_id' => 3,
+                'nis' => '12345679',
                 'kelas' => '12 RPL',
                 'jurusan' => 'PPLG',
             ],
@@ -102,6 +116,13 @@ class DatabaseSeeder extends Seeder
                 'judul' => 'Toilet Mampet',
                 'isi' => 'Mohon di cek, toilet perempuan di kamar 2, saluran pembuangannya mampet',
                 'status' => 'selesai',
+            ],
+            [
+                'siswa_id' => 2,
+                'kategori_id' => 1,
+                'judul' => 'Toilet Mampet',
+                'isi' => 'Mohon di cek, toilet perempuan di kamar 2, saluran pembuangannya mampet',
+                'status' => 'menunggu',
             ],
         ];
 
