@@ -25,5 +25,6 @@
     </div>
 </div>
 
+<script src="/vendor/boostrap/js/boostrap.bundle.js"></script>
 </body>
 </html>
